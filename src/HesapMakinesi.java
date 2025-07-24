@@ -37,12 +37,12 @@ public class HesapMakinesi {
         Scanner input = new Scanner(System.in);
         System.out.print("Kaç adet sayı gireceksiniz: ");
         int counter = input.nextInt();
-        int number, result = 0, i = 1;
+        int number, result = 1, i = 1;
         for (i = 1; i <= counter; i++) {
             System.out.print(i + ". sayı: ");
             number = input.nextInt();
             if (i == 1) {
-                result += number;
+                result *= number;
                 continue;
             }
             result *= number;
