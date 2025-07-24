@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/bedoTest.iml" filepath="$PROJECT_DIR$/bedoTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/out/bedoTest.iml" filepath="$PROJECT_DIR$/out/bedoTest.iml" />
     </modules>
   </component>
 </project>
