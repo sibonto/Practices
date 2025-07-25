@@ -31,7 +31,7 @@ public class Match {
                     this.f1.health = this.f2.hit(this.f1);
                     if (isWin())
                         break;
-                }else {
+                } else {
                     this.f1.health = this.f2.hit(this.f1);
                     if (isWin())
                         break;
@@ -39,32 +39,30 @@ public class Match {
                     if (isWin())
                         break;
 
+                }
+                System.out.println(this.f1.name + " kalan canı " + this.f1.health);
+                System.out.println(this.f2.name + " kalan canı " + this.f2.health);
             }
-            System.out.println(this.f1.name + " kalan canı " + this.f1.health);
-            System.out.println(this.f2.name + " kalan canı " + this.f2.health);
+        } else {
+            System.out.println("Sporcuların sikletleri uyumuyor.");
         }
-    } else
-
-    {
-        System.out.println("Sporcuların sikletleri uyumuyor.");
     }
-}
 
-boolean checkWeight() {
-    return ((this.f1.weight > minWeight && this.f1.weight < maxWeight) && (this.f2.weight > minWeight && this.f2.weight < maxWeight));
-}
+    boolean checkWeight() {
+        return ((this.f1.weight >= minWeight && this.f1.weight <= maxWeight) && (this.f2.weight >= minWeight && this.f2.weight <= maxWeight));
+    }
 
-boolean isWin() {
-    if (this.f1.health == 0) {
-        System.out.println(this.f2.name + " kazandı!");
-        return true;
+    boolean isWin() {
+        if (this.f1.health == 0) {
+            System.out.println(this.f2.name + " kazandı!");
+            return true;
+        }
+        if (this.f2.health == 0) {
+            System.out.println(this.f1.name + " kazandı!");
+            return true;
+        }
+        return false;
     }
-    if (this.f2.health == 0) {
-        System.out.println(this.f1.name + " kazandı!");
-        return true;
-    }
-    return false;
-}
 
 }
 
