@@ -41,10 +41,6 @@ public class HesapMakinesi {
         for (i = 1; i <= counter; i++) {
             System.out.print(i + ". sayı: ");
             number = input.nextInt();
-            if (i == 1) {
-                result *= number;
-                continue;
-            }
             result *= number;
         }
         System.out.println("Sonuç: " + result);
@@ -69,10 +65,11 @@ public class HesapMakinesi {
                 }
             }
             if (i == 1) {
-                result += number;
-                continue;
-            }
+                result = number;
+            } else {
             result /= number;
+
+            }
         }
         System.out.println("Sonuç: " + result);
     }
@@ -120,22 +117,22 @@ public class HesapMakinesi {
     static void alanvecevre() {
         Scanner input = new Scanner(System.in);
 
-            System.out.print("Uzun kenarı giriniz: ");
-            int uzun = input.nextInt();
-            System.out.print("Kısa kenarı giriniz: ");
-            int kisa = input.nextInt();
-            int alan, cevre, result;
-            alan = uzun * kisa;
-            cevre = ((uzun + kisa) * 2);
-            while (true) {
-                if (uzun == 0 || kisa == 0) {
-                    System.out.print("Kenar uzunluğu 0 olamaz. Tekrar giriniz.");
-                } else {
-                    break;
-                }
+        System.out.print("Uzun kenarı giriniz: ");
+        int uzun = input.nextInt();
+        System.out.print("Kısa kenarı giriniz: ");
+        int kisa = input.nextInt();
+        int alan, cevre, result;
+        alan = uzun * kisa;
+        cevre = ((uzun + kisa) * 2);
+        while (true) {
+            if (uzun == 0 || kisa == 0) {
+                System.out.print("Kenar uzunluğu 0 olamaz. Tekrar giriniz.");
+            } else {
+                break;
             }
-            System.out.println("Alan: " + alan + "\nÇevre: " + cevre);
         }
+        System.out.println("Alan: " + alan + "\nÇevre: " + cevre);
+    }
 
 
     public static void main(String[] args) {
