@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Practices/Prac.iml" filepath="$PROJECT_DIR$/Practices/Prac.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PratikMaceraOyunu/PratikMaceraOyunu.iml" filepath="$PROJECT_DIR$/PratikMaceraOyunu/PratikMaceraOyunu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Practices/Test/Test.iml" filepath="$PROJECT_DIR$/Practices/Test/Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/out/bedoTest.iml" filepath="$PROJECT_DIR$/out/bedoTest.iml" />
     </modules>
   </component>
